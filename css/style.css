@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 .top-section {
@@ -14,6 +15,7 @@ body {
 }
 
 .bottom-section {
+    display: flex;
     width: 100%;
     height: 80px;
     background-color: rgb(44, 44, 44);
@@ -26,6 +28,19 @@ body {
 .sidebar{
     width: 50px;
     background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .main-content {
@@ -90,6 +105,21 @@ main {
     border-radius: 25px;
     float: right;
 }
+
+.left-col , .right-col {
+    width: 25%;
+    height: 100%;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.center-col {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    border: 1px solid black;
+}
+
 
 @media screen and (min-width: 576px) {
     .sidebar {
