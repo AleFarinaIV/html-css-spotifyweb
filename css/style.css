@@ -53,6 +53,10 @@ body {
     padding-top: 13px;
 }
 
+img {
+    width: 100%;
+}
+
 .small {
     width: 20px;
     height: 20px;
@@ -95,17 +99,14 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    align-items: center;
 }
 
-.col-16 {
-    width: calc(50% - 10px)
+.col-xs-s-50 {
+    width: 50%;
 }
 
-.col-16>.content {
-    background-color: white;
-    height: 150px;
-    border: 1px solid red;
+.col-xs-s-50>.content {
+    margin: 10px;
 }
 
 .selection ul {
@@ -133,17 +134,16 @@ main {
 
 .volume {
     position: relative;
-    width: 50px;
+    width: 100px;
     height: 6px;
     background-color: #555;
     border-radius: 3px;
     overflow: hidden;
-    margin-left: 10px;
 }
 
 .volume-low {
     position: absolute;
-    width: 20%;
+    width: 30%;
     height: 100%;
     background-color: #999;
     border-radius: 3px 0 0 3px;
@@ -167,9 +167,13 @@ main {
     width: 50%;
 } */
 
-.text {
+.text-size {
     width: 50%;
     font-size: 10px;
+}
+
+.text {
+    text-align: center;
 }
 
 .no-gap {
@@ -180,8 +184,23 @@ main {
     flex-wrap: nowrap;
 }
 
+.pt-35 {
+    padding-top: 35px;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.float-end {
+    float: right;
+}
+
 /* padding-top per portare al centro?*/
 
+
+
+/* Media Queries */
 
 @media screen and (min-width: 576px) {
     .sidebar {
@@ -193,5 +212,17 @@ main {
     header {
         width: calc(100vw - 200px);
         left: 200px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .col-md-25 {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .col-lg-16 {
+        width: calc(100% / 6);
     }
 }
