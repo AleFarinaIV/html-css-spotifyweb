@@ -1,94 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Spotify</title>
-</head>
-<body>
-    <div class="top-section">
-        <div class="sidebar">
-            <div class="top-icon">
-                <div class="icon"></div>
-                <div class="icon"></div>
-                <div class="icon"></div>
-                <div class="icon"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Spotify</title>
+    </head>
+    <body>
+        <div class="top-section">
+            <div class="sidebar">
+                <div class="top-icon">
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                </div>
+                <div class="bottom-icon">
+                    <div class="icon x-small"></div>
+                    <div class="icon"></div>
+                </div>
             </div>
-            <div class="bottom-icon">
-                <div class="icon small"></div>
-                <div class="icon"></div>
+            <div class="main-content">
+                <header>
+                    <div class="button"></div>
+                </header>
+                <main>
+                    <div class="selection">
+                        <ul>
+                            <li>IN EVIDENZA</li>
+                            <li>PODCAST</li>
+                            <li>CLASSIFICHE</li>
+                            <li>GENERI E MOOD</li>
+                            <li>NUOVE USCITE</li>
+                            <li>SCOPRI</li>
+                        </ul>
+                    </div>
+                    <div class="recent">
+                        Recently played
+                        <div class="row">
+                            <div class="col-16">
+                                <div class="content"></div>
+                            </div>
+                            <div class="col-16">
+                                <div class="content"></div>
+                            </div>
+                            <div class="col-16">
+                                <div class="content"></div>
+                            </div>
+                            <div class="col-16">
+                                <div class="content"></div>
+                            </div>
+                            <div class="col-16">
+                                <div class="content"></div>
+                            </div>
+                            <div class="col-16">
+                                <div class="content"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="created-for">
+                        <h2>Creato per John Doe</h2>
+                        <span>Più ascolti, più accurati saranno i
+                            suggerimenti</span>
+                        <div class="row">
+                            <div class="col-16">
+                                <div class="content"></div>
+                            </div>
+                            <div class="col-16">
+                                <div class="content"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-popular">
+                        <h2>Artisti più popolari</h2>
+                        <span>Più ascolti, più accurati saranno i
+                            suggerimenti</span>
+                        <div class="row">
+                            <div class="col-16">
+                                <div class="content"></div>
+                            </div>
+                            <div class="col-16">
+                                <div class="content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </div>
         </div>
-        <div class="main-content">
-            <header>
-                <div class="button"></div>
-            </header>
-            <main>
-                <div class="selection">
-                    <ul>
-                        <li>IN EVIDENZA</li>
-                        <li>PODCAST</li>
-                        <li>CLASSIFICHE</li>
-                        <li>GENERI E MOOD</li>
-                        <li>NUOVE USCITE</li>
-                        <li>SCOPRI</li>
-                    </ul>
-                </div>
-                <div class="recent">
-                    Recently played
-                    <div class="row">
-                        <div class="col-16">
-                            <div class="content"></div>
-                        </div>
-                        <div class="col-16">
-                            <div class="content"></div>
-                        </div>
-                        <div class="col-16">
-                            <div class="content"></div>
-                        </div>
-                        <div class="col-16">
-                            <div class="content"></div>
-                        </div>
-                        <div class="col-16">
-                            <div class="content"></div>
-                        </div>
-                        <div class="col-16">
-                            <div class="content"></div>
-                        </div>
+        <div class="bottom-section">
+            <div class="left-col">
+                <div class="row no-gap">
+                    <div class="current-song row no-gap no-wrap">
+                        <div class="image icon"></div>
+                        <span class="text">
+                            <span class="">Song Name</span>
+                            <span class="">Artist Name
+                        </span>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
                     </div>
                 </div>
-                <div class="created-for">
-                    <h2>Creato per John Doe</h2>
-                    <span>Più ascolti, più accurati saranno i suggerimenti</span>
-                    <div class="row">
-                        <div class="col-16">
-                            <div class="content"></div>
-                        </div>
-                        <div class="col-16">
-                            <div class="content"></div>
-                        </div>
+            </div>
+            <div class="center-col">
+
+            </div>
+            <div class="right-col">
+                <div class="row">   <!-- Bisogna portare il contenuto alla metà esatta del contenitore -->
+                    <i class="fa-solid fa-list fa-xs"></i>
+                    <i class="fa-solid fa-display fa-xs"></i>
+                    <i class="fa-solid fa-volume-high fa-xs"></i>
+                    <div class="volume">
+                        <div class="volume-low"></div>
                     </div>
                 </div>
-                <div class="more-popular">
-                    <h2>Artisti più popolari</h2>
-                    <span>Più ascolti, più accurati saranno i suggerimenti</span>
-                    <div class="row">
-                        <div class="col-16">
-                            <div class="content"></div>
-                        </div>
-                        <div class="col-16">
-                            <div class="content"></div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-    </div>
-    <div class="bottom-section">
-        <div class="left-col"></div>
-        <div class="center-col"></div>
-        <div class="right-col"></div>
-    </div>
-</body>
-</html>
+
+            </div>
+        </body>
+    </html>
