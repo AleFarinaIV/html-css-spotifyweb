@@ -44,8 +44,12 @@ body {
 }
 
 .current-song {
-    width: 60%;
-    padding-top: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.description-song {
+    margin: 0;
 }
 
 .icons {
@@ -55,6 +59,15 @@ body {
 
 img {
     width: 100%;
+}
+
+.mini-size {
+    width: 30px;
+    height: 30px;
+}
+
+.circle {
+    border-radius: 50%;
 }
 
 .small {
@@ -101,11 +114,11 @@ main {
     gap: 10px;
 }
 
-.col-xs-s-50 {
+.col-xs-sm-50 {
     width: 50%;
 }
 
-.col-xs-s-50>.content {
+.col-xs-sm-50>.content {
     margin: 10px;
 }
 
@@ -141,6 +154,31 @@ main {
     overflow: hidden;
 }
 
+.playbar-controls {
+    display: flex;
+}
+
+.current, .end {
+    width: 10%;
+    background-color: green;
+    border: 1px solid white;
+}
+
+.playbar {
+    width: 80%;
+    background-color: blue;
+    border: 1px solid white;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0 , -50%);
+    width: 300px;
+    height: 6px;
+    background-color: #555;
+    border-radius: 3px; */
+}
+
+
 .volume-low {
     position: absolute;
     width: 30%;
@@ -150,22 +188,20 @@ main {
 }
 
 .left-col , .right-col {
-    width: 25%;
+    width: 20%;
     height: 100%;
     background-color: red;
     border: 1px solid black;
+    align-content: center;
 }
 
 .center-col {
-    width: 50%;
+    width: 60%;
     height: 100%;
-    background-color: blue;
     border: 1px solid black;
+    text-align: center;
+    align-content: center;
 }
-
-/* .image {
-    width: 50%;
-} */
 
 .text-size {
     width: 50%;
@@ -196,6 +232,14 @@ main {
     float: right;
 }
 
+.d-block-xs-sm {
+    display: block;
+}
+
+.jc-between {
+    justify-content: space-between;
+}
+
 /* padding-top per portare al centro?*/
 
 
@@ -219,10 +263,18 @@ main {
     .col-md-25 {
         width: 25%;
     }
+
+    .d-block-xs-sm {
+        display: inline;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .col-lg-16 {
         width: calc(100% / 6);
+    }
+
+    .d-block-xs-sm {
+        display: inline;
     }
 }
