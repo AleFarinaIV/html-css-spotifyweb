@@ -34,12 +34,8 @@ body {
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
+    width: 25px;
+    margin: 5px 13px;
     cursor: pointer;
 }
 
@@ -88,10 +84,8 @@ img {
 }
 
 .x-small {
-    width: 10px;
-    height: 10px;
-    margin-left: 20px;
-    padding: 5px;
+    width: 14px;
+    margin-left: 18px;
 }
 
 .main-content {
@@ -292,6 +286,10 @@ i.resize {
     margin-bottom: 10px;
 }
 
+.mb-25 {
+    margin-bottom: 25px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
@@ -300,6 +298,11 @@ i.resize {
     color: grey;
 }
 
+.circle-bg {
+    background-color: grey;
+    border-radius: 50%;
+    padding: 2px 3px;
+}
 
 
 
@@ -334,7 +337,7 @@ i.resize {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
     .col-lg-16 {
         width: calc(100% / 6);
     }
